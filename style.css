@@ -1,0 +1,47 @@
+
+.grid-paper-bg {
+    background-color: white; /* Paper color */
+    background-size: 80px 80px; /* Size of the grid squares */
+    background-image:
+        linear-gradient(to right, rgba(150, 144, 144, 0.1) 1px, transparent .1px), /* Vertical lines */
+        linear-gradient(to bottom, rgba(150, 144, 144, 0.1) 1px, transparent .1px); /* Horizontal lines */
+    height: 100vh; /* Full viewport height for demonstration */
+    padding-top: 20px; /* Add some padding so content isn't right at the top */
+}
+.photo{
+    height: 300px;
+    border-radius: 20px;
+}
+.skills-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #0f172a; /* dark professional */
+  overflow: hidden;
+  padding: 12px 0;
+  z-index: 1000;
+}
+
+.skills-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scrollSkills 25s linear infinite;
+}
+
+.skills-track span {
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+@keyframes scrollSkills {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .skills-set {
+        position: relative;
+        bottom: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0f172a; /* dark professional */
+        overflow: hidden;
+        padding: 12px 0;
+        z-index: 1000;
+        height: 50px;
+    }   
+
+    .skills-track {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+        animation: scrollSkills 50s linear infinite;
+    }
+
+    .skills-track span {
+        color: #38bdf8;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+
+    @keyframes scrollSkills {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+</style>
+<body>
+    <!-- Header -->
+    <header class="sticky-top">
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="navbar-brand text-dark" href="#">DM</a>
+
+            <!-- Burger Button (Mobile only) -->
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse d-flex justify-c" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Testimonials</a></li>
+                </ul>
+
+                <!-- Search -->
+                <div class="d-flex me-5">
+                    <button class="btn btn-outline-success" type="submit"><a href="contact.html" class="text-dark text-decoration-none">Contact Me</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <div class="container-fluid">
+        <!-- Section 1 -->
+        <section class="grid-paper-bg">
+            <div class="mt-5">
+                <h4 class="d-flex justify-content-center align-items-center">-Hello</h4>
+                <h1 class="d-flex justify-content-center align-items-center">I'm Dharanika</h1>
+                <h1 class="d-flex justify-content-center align-items-center">Frontend Developer</h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <img class="photo b-5" src="dharanika-phto.png" alt="photo">
+            </div>
+        </section>
+        <!-- section 2 -->
+        <section class="skills-set">
+            <div class="skills-track rfm-marquee-container skills-wrap theme-secondary p-3" style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;">
+                <div class="rfm-marquee" style="--pause-on-hover: paused; --pause-on-click: paused; --play: running; --direction: normal; --duration: 70.046875s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                    <div class="rfm-initial-child-container skills-track">
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">PHP</span><span class="mx-2 skills-span">✦</span></span></div>
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">MYSQL</span><span class="mx-2 skills-span">✦</span></span></div>
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">REACT JS</span><span class="mx-2 skills-span">✦</span></span></div>
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">WORDPRESS</span><span class="mx-2 skills-span">✦</span></span></div>
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">HTML</span><span class="mx-2 skills-span">✦</span></span></div>
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">CSS</span><span class="mx-2 skills-span">✦</span></span></div>
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">BOOTSTRAP</span><span class="mx-2 skills-span">✦</span></span></div>
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">JAVASCRIPT</span><span class="mx-2 skills-span">✦</span></span></div>
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">JQUERY</span><span class="mx-2 skills-span">✦</span></span></div>
+                        <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">AJAX</span><span class="mx-2 skills-span">✦</span></span></div>
+                    </div>
+                </div>
+                <div class="rfm-marquee skills-track" style="--pause-on-hover: paused; --pause-on-click: paused; --play: running; --direction: normal; --duration: 70.046875s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;">
+                    <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">PHP</span><span class="mx-2 skills-span">✦</span></span></div>
+                    <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">MYSQL</span><span class="mx-2 skills-span">✦</span></span></div>
+                    <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">REACT JS</span><span class="mx-2 skills-span">✦</span></span></div>
+                    <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">WORDPRESS</span><span class="mx-2 skills-span">✦</span></span></div>
+                    <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">HTML</span><span class="mx-2 skills-span">✦</span></span></div>
+                    <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">CSS</span><span class="mx-2 skills-span">✦</span></span></div>
+                    <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">BOOTSTRAP</span><span class="mx-2 skills-span">✦</span></span></div>
+                    <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">JAVASCRIPT</span><span class="mx-2 skills-span">✦</span></span></div>
+                    <div class="rfm-child" style="--transform: none;"><span><span class="mx-4 skills-span">JQUERY</span><span class="mx-2 skills-span">✦</span></span></div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+    </div>
+
+</body>
+</html>
